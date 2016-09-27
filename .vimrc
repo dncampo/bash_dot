@@ -3,12 +3,19 @@
 :set number
 :syntax on
 :set incsearch
+:set hlsearch
+:set smartcase
 :set wildmode=longest,list
 :set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L][HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 :set laststatus=2
 :colorscheme slate
 :set cursorline
 :set tags=tags;
+
+:set showbreak=+++
+:set textwidth=100
+:set showmatch
+:set visualbell
 
 " Autoindent feature
 set cindent
@@ -20,3 +27,6 @@ set shiftwidth=3
 
 " Opening and closing braces with Ctrl+f
 imap <C-F> {<CR>}<C-O>O<TAB>
+
+:set ruler
+:set undolevels=1000
